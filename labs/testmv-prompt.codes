@@ -1,0 +1,36 @@
+.9.3-p194 :002 > load 'test.rb'
+ => true
+1.9.3-p194 :003 > movie = Movie.new
+ => #<Movie:0x007fdf0b0d5f38>
+1.9.3-p194 :004 > movie.length
+ => nil
+1.9.3-p194 :005 > movie.length(4)
+ArgumentError: wrong number of arguments (1 for 0)
+	from test.rb:3:in `length'
+	from (irb):5
+	from /usr/local/rvm/rubies/ruby-1.9.3-p194/bin/irb:16:in `<main>'
+1.9.3-p194 :006 > movie.length = 'sixty minutes'
+ => "sixty minutes"
+1.9.3-p194 :007 > movie.length
+ => "sixty minutes"
+1.9.3-p194 :008 > load 'test.rb'
+ => true
+1.9.3-p194 :009 > movie.length
+ => "sixty minutes"
+1.9.3-p194 :010 > movie.rating
+ => nil
+1.9.3-p194 :011 > movie.rating =
+1.9.3-p194 :012 >   movie.rating = 'four stars
+1.9.3-p194 :013'>
+1.9.3-p194 :014'> '
+ => "four stars\n\n"
+1.9.3-p194 :015 > movie.rating = 'four stars'
+ => "four stars"
+1.9.3-p194 :016 > movie.rating
+ => "four stars"
+1.9.3-p194 :017 > load 'test.rb'
+ => true
+1.9.3-p194 :018 > movie.play
+play margin call
+ => nil
+1.9.3-p194 :019 >

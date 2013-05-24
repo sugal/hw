@@ -1,0 +1,3 @@
+Define length and year for Movie.
+Create a margin_call object whose name is ‘Margin Call’, length is 107 minutes, year is 2011, and rating is 4.
+Define a play method for Movie class so that margin_call.play outputs ‘Playing Margin Call...’

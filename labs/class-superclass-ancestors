@@ -1,0 +1,18 @@
+.9.3-p429 :027 > Movie.new("Margin Call", 2011, 107, 4)
+ => #<Movie:0x007f997b9086b8 @year=2011, @length=107, @rating=4, @name=["Margin Call", 2011, 107, 4]>
+1.9.3-p429 :028 > mv=Movie.new("MC", 2012, 60, 4)
+ => #<Movie:0x007f997b900d78 @year=2012, @length=60, @rating=4, @name=["MC", 2012, 60, 4]>
+1.9.3-p429 :029 > irb
+1.9.3-p429 :001 > "s".string
+NoMethodError: undefined method `string' for "s":String
+	from (irb#1):1
+1.9.3-p429 :002 > "s".class
+ => String
+1.9.3-p429 :003 > "s".class.superclass
+ => Object
+1.9.3-p429 :004 > "s".class.ancestors
+ => [String, Comparable, Object, Kernel, BasicObject]
+1.9.3-p429 :005 > "s".class.superclass.superclass
+ => BasicObject
+1.9.3-p429 :006 > "s".class.superclass.superclass.superclass
+ => nil
